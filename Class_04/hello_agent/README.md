@@ -95,4 +95,10 @@ agent: Agent = Agent(name="Assistant", instructions="You are a helpful assistant
 result = Runner.run_sync(agent, "Hello")
 
 print(result.final_output)
-```
+
+<h1 align="center">
+  <span style="font-family: 'Segoe UI', 'Arial', sans-serif; font-size: 2.5em; color: #4F8A8B; letter-spacing: 2px;">
+    ✨ <b>arahmaddeveloper</b> ✨
+  </span>
+</h1>
+
