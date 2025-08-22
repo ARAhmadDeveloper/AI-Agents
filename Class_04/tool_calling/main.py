@@ -100,3 +100,10 @@ async def Calling_Agent():
     print(result.final_output)
     
 asyncio.run(Calling_Agent())
+
+
+
+# There are 3 types of Tools in OpenAI Agents
+# 1. Hosted Tools: These are tools that are hosted on the OpenAI platform. They can be used by any agent.
+# 2. Function Tools: These are tools that are defined as functions and can be used by any agent.
+# 3. Agents as Tools: These are tools that are defined as agents and can be used by any agent.
