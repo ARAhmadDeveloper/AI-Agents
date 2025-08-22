@@ -124,4 +124,4 @@ Tavily provides fast, quality web search with a developer‑friendly API and str
 
 ### Author
 
-- Username: <arahmaddeveloper>
+- Username: arahmaddeveloper
