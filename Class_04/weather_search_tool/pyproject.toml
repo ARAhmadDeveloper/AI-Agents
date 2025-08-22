@@ -7,4 +7,8 @@ requires-python = ">=3.12"
 dependencies = [
     "openai-agents>=0.2.9",
     "tavily-python>=0.7.11",
+    "fastapi>=0.115.0",
+    "uvicorn>=0.30.0",
+    "python-dotenv>=1.0.1",
+    "pydantic>=2.11.7",
 ]

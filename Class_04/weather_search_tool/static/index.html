@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tavily Agent Search</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Tavily Agent Search</h1>
+        <p>Ask anything. The agent will search the web or use tools as needed.</p>
+      </header>
+
+      <main>
+        <form id="query-form">
+          <textarea id="prompt" placeholder="Type your question..." rows="4"></textarea>
+          <button type="submit" id="send">Send</button>
+        </form>
+
+        <section id="result" class="card hidden">
+          <h2>Result</h2>
+          <pre id="output"></pre>
+        </section>
+      </main>
+
+      <footer>
+        <span>Built with FastAPI + Tavily + Gemini</span>
+      </footer>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+  </html>
+
+

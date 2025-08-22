@@ -86,7 +86,11 @@ Notes:
 ### Run
 
 ```bash
+# CLI
 python main.py
+
+# Web server
+uvicorn server:app --reload --port 8000
 ```
 
 You will be prompted:
@@ -102,6 +106,12 @@ Try queries like:
 - "Calculate 23\*17 and then search for the winner of the 2023 World Chess Championship."
 
 The agent will choose between answering directly, using math tools, or calling Tavily search.
+
+### Web Frontend
+
+- Start the API server: `uvicorn server:app --reload --port 8000`
+- Open the UI at `http://localhost:8000/`
+- The frontend (in `static/`) posts to `/api/query` with `{ prompt }` and renders `output`.
 
 ### Implementation Notes
 
@@ -120,7 +130,6 @@ The agent will choose between answering directly, using math tools, or calling T
 ### Why Tavily?
 
 Tavily provides fast, quality web search with a developer‑friendly API and structured results, making it ideal for agents that need just‑in‑time retrieval.
-
 
 ### Author
 
