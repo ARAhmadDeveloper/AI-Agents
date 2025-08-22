@@ -10,6 +10,7 @@ set_default_openai_api("chat_completions")
 gemini_api_key = os.environ.get("GEMINI_API_KEY")
 tavily_api_key = os.environ.get("TAVILY_API_KEY")
 
+
 # Tracing disabled
 set_tracing_disabled(disabled=True)
 
@@ -71,6 +72,10 @@ def search_web(query: str) -> str:
     response = TavilyClient(api_key=tavily_api_key).search(query)
     return response
 
+
+
+
+
 math_agent: Agent = Agent(
     name="Alex - Math Genius Agent",
     instructions="You are a helpful math assistant.",
@@ -94,25 +99,19 @@ math_agent: Agent = Agent(
 
 
 
-# Reusable runner for API and CLI
-async def run_agent(user_input: str) -> str:
-    result: Runner = await Runner.run(
-        starting_agent=math_agent,
-        input=user_input,
-    )
-    return result.final_output
-
-
-# Run Agents in Async Mode (CLI entry)
-async def _cli_entry():
+# Run Agents in Async Mode
+async def Calling_Agent():
     get_user_input = input("Enter your prompt: ")
-    final = await run_agent(get_user_input)
+
+    result: Runner = await Runner.run(
+        starting_agent=math_agent, 
+        input=get_user_input,
+    )
+
     print("\nCALLING AGENT\n")
-    print(final)
-
-
-if __name__ == "__main__":
-    asyncio.run(_cli_entry())
+    print(result.final_output)
+    
+asyncio.run(Calling_Agent())
 
 
 
