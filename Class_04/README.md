@@ -4,6 +4,26 @@
 
 This repository documents my intensive 2-day learning journey into the world of AI Agents, covering fundamental concepts, practical implementations, and advanced tool calling techniques. Each project represents a significant milestone in understanding how to build intelligent, autonomous AI systems.
 
+## 🎯 Learning Goals & Targets
+
+### Day 1 Learning Target: `goal.png`
+
+- **Foundation Building**: Understanding LLM provider configuration at different levels
+- **Provider Flexibility**: Learning how to use OpenAI-compatible APIs with various backends
+- **Configuration Mastery**: Agent, Run, and Global level provider setup
+- **Async Programming**: Mastering async/await patterns in agent execution
+
+### Day 2 Learning Target: `goal_2.png`
+
+- **Tool Calling Excellence**: Building robust and intelligent tool calling systems
+- **Web Search Integration**: Implementing real-time information retrieval capabilities
+- **Multi-Tool Orchestration**: Creating agents that can intelligently select and use multiple tools
+- **Production-Ready Code**: Implementing best practices for security, error handling, and user experience
+
+### 📸 Visual Learning Targets
+
+The images `goal.png` and `goal_2.png` represent the specific learning objectives and milestones for each day of this intensive AI Agents learning journey.
+
 ---
 
 ## 🎯 Day 1: Foundation & LLM Provider Configuration
@@ -62,7 +82,7 @@ agent = Agent(
 - Structured logging for tool calls
 - Project hygiene with dependency management (`uv`)
 
-### Project: `weather_search_tool/`
+### Project: `web_search_tool/`
 
 **Focus**: Real-World Tool Integration & Multi-Tool Reasoning
 
@@ -150,7 +170,7 @@ agent = Agent(
 # Clone and navigate to any project
 cd hello_agent/          # LLM Provider Configuration
 cd tool_calling/         # Tool Calling Fundamentals
-cd weather_search_tool/  # Web Search Integration
+cd web_search_tool/  # Web Search Integration
 
 # Set up environment
 uv venv
@@ -176,7 +196,7 @@ Class_04/
 │   ├── pyproject.toml    # Dependencies
 │   └── README.md         # Tool calling best practices
 │
-├── weather_search_tool/   # Day 2: Web Search Integration
+├── web_search_tool/       # Day 2: Web Search Integration
 │   ├── main.py           # Multi-tool agent with web search
 │   ├── pyproject.toml    # Dependencies
 │   └── README.md         # Complete implementation guide

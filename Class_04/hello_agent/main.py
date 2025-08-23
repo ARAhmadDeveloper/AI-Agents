@@ -8,7 +8,6 @@ _: bool = load_dotenv(find_dotenv())
 set_default_openai_api("chat_completions")
 gemini_api_key = os.environ.get("GEMINI_API_KEY")
 
-
 # Tracing disabled
 set_tracing_disabled(disabled=True)
 
